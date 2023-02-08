@@ -1,11 +1,8 @@
-import Image from "next/image";
-import TopHeader from "../Atom/MenuBar";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import NavMenu from "../Molekul/NavMenu";
 import MenuBar from "../Atom/MenuBar";
-// import AOS from "aos";
 
 export default function Header({ HandleSearch }: any) {
   const { theme, setTheme } = useTheme();

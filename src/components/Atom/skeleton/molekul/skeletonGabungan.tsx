@@ -1,6 +1,5 @@
 import React from "react";
 import SkeletonRekomendasi from "../atom/skeletonRekomendasi";
-import SkeletonTable from "../atom/skeletonTable";
 import SkeletonTop from "../atom/skeletonTop";
 
 export default function SkeletonGabungan() {

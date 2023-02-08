@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import Image from "next/image";
 
 export default function ScrollToTop() {
   const [showButton, setShowButton] = useState(false);

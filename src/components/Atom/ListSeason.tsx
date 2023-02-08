@@ -1,7 +1,6 @@
 import React from "react";
 import useSWR from "swr";
 import Image from "next/image";
-import NotData from "./NotData";
 import SkeletonRekomendasi from "./skeleton/atom/skeletonRekomendasi";
 
 const fetcher = (url: any) => fetch(url).then((res) => res.json());

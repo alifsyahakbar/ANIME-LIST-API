@@ -1,5 +1,4 @@
 import { MdOutlineClose } from "react-icons/md";
-import { useState, useEffect } from "react";
 import ListInformasi from "../Atom/ListInformasi";
 
 export default function MoreInformasi({ close, data }: any) {

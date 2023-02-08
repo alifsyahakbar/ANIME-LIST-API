@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import Character from "../Organisme/Character";
 import ListInformasi from "../Atom/ListInformasi";

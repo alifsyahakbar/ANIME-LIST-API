@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import welcome from "../../../public/assets/not-data.png";
 
 export default function Welcome() {
   return (

@@ -2,8 +2,6 @@ import { useRouter } from "next/router";
 import React from "react";
 import Image from "next/image";
 import useSWR from "swr";
-import NotData from "./NotData";
-import Loading from "./skeleton/Loading";
 import SkeletonRekomendasi from "./skeleton/atom/skeletonRekomendasi";
 
 const fetcher = (url: any) => fetch(url).then((res) => res.json());
