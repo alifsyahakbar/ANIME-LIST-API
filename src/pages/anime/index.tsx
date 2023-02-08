@@ -1,29 +1,18 @@
 import Head from "next/head";
-import Header from "../components/Organisme/Header";
-import Footer from "../components/Organisme/Footer";
-import { useState, useEffect } from "react";
-import HomePage from "../components/Organisme/HomePage";
-import ResultSearch from "../components/Organisme/ResultSearch";
+import Header from "../../components/Organisme/Header";
+import Footer from "../../components/Organisme/Footer";
+import { useState } from "react";
+import ResultSearch from "../../components/Organisme/ResultSearch";
+import All from "../../components/Organisme/All";
 
 export default function Home() {
   const [search, setSearch] = useState("");
-  // const [isWelcome, setWelcome] = useState(true);
 
   const HandleSearch = (e: any) => {
     e.preventDefault();
     const inputQuery = e.target[0].value;
     setSearch(inputQuery);
   };
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setWelcome(false);
-  //   }, 5000);
-  // });
-
-  // if (isWelcome) {
-  //   return <Welcome></Welcome>;
-  // }
 
   return (
     <>
@@ -34,10 +23,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header HandleSearch={HandleSearch}></Header>
+      <h1 className="font-bangers text-2xl ml-6 lg:ml-12 mt-6 mb-2">
+        - Anime -
+      </h1>
+      <hr />
       {search ? (
         <ResultSearch search={search} value={"anime"}></ResultSearch>
       ) : (
-        <HomePage></HomePage>
+        <All value={"anime"} limit={""}></All>
       )}
       <Footer></Footer>
     </>
