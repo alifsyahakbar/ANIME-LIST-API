@@ -56,7 +56,7 @@ export default function Details({ data }: any) {
             <h3>Studio</h3>
           </div>
         </div>
-        <div className="bg-gray-50 h-auto mx-2 px-4 py-6 mt-6 rounded-xl">
+        <div className="bg-gray-50 dark:bg-[#202020] h-auto mx-2 px-4 py-6 mt-6 rounded-xl">
           <h4 className="font-bold text-lg mb-2">Synopsis</h4>
           <p>{data.synopsis}</p>
         </div>

@@ -26,9 +26,6 @@ export default function HomePage() {
           <TopAnime value={"anime"} limit={"5"}></TopAnime>
           <TopAnime value={"manga"} limit={"5"}></TopAnime>
         </div>
-        <div className="overflow-x-scroll scrollbar-hide">
-          <ListSeason></ListSeason>
-        </div>
       </div>
     </div>
   );

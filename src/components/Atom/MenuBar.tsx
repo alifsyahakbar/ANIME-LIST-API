@@ -27,6 +27,17 @@ export default function MenuBar({ HandleSearch }: any) {
       }
     });
   });
+  const container = {
+    hidden: { opacity: 1, x: -90 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
 
   return (
     <div className={`${positionHeader}`}>
@@ -34,10 +45,16 @@ export default function MenuBar({ HandleSearch }: any) {
         <AnimatePresence>
           {open && (
             <motion.div
-              initial={{ opacity: 0, x: 80 }}
-              animate={{ opacity: 1, x: 5 }}
-              exit={{ x: 80, opacity: 0 }}
-              transition={{ duration: 0.3 }}
+              variants={container}
+              initial="hidden"
+              animate="visible"
+              exit={{
+                x: -300,
+                opacity: 0,
+                transition: {
+                  duration: 0.4,
+                },
+              }}
               className="relative w-full"
             >
               <Sidebar></Sidebar>

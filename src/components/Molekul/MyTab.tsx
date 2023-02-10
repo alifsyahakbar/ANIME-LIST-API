@@ -16,8 +16,8 @@ export default function MyTab({ data }: any) {
                 <div
                   className={`pb-2 font-bold transition-all ease-out duration-150 capitalize text-bold outline-none focus:outline-none ${
                     selected
-                      ? "border-b-2 border-indigo-600 focus:outline-none text-black"
-                      : "bg-white text-gray-400"
+                      ? "border-b-2 border-indigo-600 focus:outline-none text-black dark:text-white"
+                      : " text-gray-400"
                   }`}
                 >
                   {item}

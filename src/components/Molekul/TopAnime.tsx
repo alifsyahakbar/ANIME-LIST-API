@@ -45,7 +45,7 @@ export default function TopAnime({ value, limit }: any) {
               key={index}
               className=" flex flex-row items-center px-1 my-2 py-1 mx-1  shadow-md rounded-md"
             >
-              <div className="relative  w-24 h-auto">
+              <div className="relative  w-[120px] h-auto">
                 <Image
                   onClick={() => router.push(`/${value}/${data.mal_id}`)}
                   loader={myLoader}
