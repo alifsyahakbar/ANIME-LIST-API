@@ -12,7 +12,7 @@ export default function NavMenu({ HandleSearch }: any) {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 126) {
-        setpositionHeader("w-full fixed top-0");
+        setpositionHeader("w-full fixed top-0 ");
       } else {
         setpositionHeader("");
       }
@@ -22,7 +22,7 @@ export default function NavMenu({ HandleSearch }: any) {
   return (
     <>
       <div
-        className={` ${positionHeader} z-40 lg:justify-between items-center px-14  text-white hidden lg:flex`}
+        className={` ${positionHeader} z-40 lg:justify-between items-center px-14 bg-white text-black dark:text-white hidden lg:flex`}
       >
         <ListMenu dislay={"flex"}></ListMenu>
         <div className="flex items-center">
@@ -32,7 +32,7 @@ export default function NavMenu({ HandleSearch }: any) {
             title={`Cari ${asPath == "/manga" ? "manga" : "anime"}`}
             styleInput={"px-4 py-1 rounded-l-md text-black"}
             styleButton={
-              "px-3 py-1 rounded-r-md bg-slate-100 hover:bg-slate-800 text-white hover:text-white"
+              "px-3 py-1 rounded-r-md bg-slate-100 lg:bg-slate-800 hover:bg-slate-800 text-white hover:text-white"
             }
           ></FormSearch>
         </div>

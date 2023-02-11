@@ -25,7 +25,7 @@ export default function TopAnime({ value, limit }: any) {
     return <SkeletonTop></SkeletonTop>;
   }
   return (
-    <div className={` ${value == "manga" ? "mt-8" : ""}`}>
+    <div className={` ${value == "manga" ? "mt-8 lg:mt-0" : ""} lg:w-1/2`}>
       <div className="flex justify-between items-center mx-2">
         <h1 className=" pb-1 font-bold text-lg capitalize tracking-normal">
           Top {`${value}`}

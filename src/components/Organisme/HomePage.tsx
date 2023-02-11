@@ -22,7 +22,7 @@ export default function HomePage() {
         <div className="flex flex-wrap justify-center w-full text-center">
           <Rekomendasi></Rekomendasi>
         </div>
-        <div className="w-full">
+        <div className="w-full lg:flex lg:gap-4">
           <TopAnime value={"anime"} limit={"5"}></TopAnime>
           <TopAnime value={"manga"} limit={"5"}></TopAnime>
         </div>
